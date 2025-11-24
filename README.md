@@ -9,8 +9,6 @@ A Python tool for validating and cleaning salary datasets. It checks for missing
 This script is tested against a dataset from **Kaggle**:  
 [Kaggle – Salary Insights by Job Role](https://www.kaggle.com/datasets/zahranusrat/salary)  
 
-⚠️ This repository does **not** include the full dataset (due to size and licensing).  
-To run the validation yourself, download the dataset from Kaggle and place it in the same directory as `salary_validator.py`.
 
 ---
 
