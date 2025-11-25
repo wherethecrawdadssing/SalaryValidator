@@ -1,33 +1,30 @@
-# SalaryValidator
+# DataValidator
 
-A Python tool for validating and cleaning salary datasets. It checks for missing values, duplicates, invalid experience levels, and salary outliers, and generates a summary report with statistics and basic visualizations.
-
----
-
-## Dataset
-
-This script is tested against a dataset from **Kaggle**:  
-[Kaggle – Salary Insights by Job Role](https://www.kaggle.com/datasets/zahranusrat/salary)  
-
+A Python tool for validating and cleaning CSV datasets. It performs basic data quality checks such as missing values, duplicate rows, and can be extended with custom validation rules. Generates a JSON report summarizing the findings.
 
 ---
 
 ## Features
 
-- Load CSV datasets.  
-- Select relevant columns (`work_year`, `experience_level`, `employment_type`, `job_title`, `salary_in_usd`).  
-- Detect and remove duplicate rows.  
-- Check for missing values and validate experience-level values (`EN`, `MI`, `SE`, `EX`).  
-- Identify salary outliers using the IQR method.  
-- Generate visualizations:
-  - Experience level distribution  
-  - Salary distribution (histogram + boxplot)  
-- Output a JSON report summarizing findings.
+- Load any CSV dataset.  
+- Check for missing values in all columns.  
+- Detect duplicate rows.  
+- Generate a structured JSON report.  
+- Optional: save the report to a specified file path.  
+- Easily extensible for additional validation rules (e.g., outlier detection, categorical value checks, visualizations).
 
 ---
 
-## Usage
+## Dataset
 
-1. Clone this repository:  
-   ```bash
-   git clone https://github.com/wherethecrawdadssing/SalaryValidator.git
+This tool can work with **any CSV dataset**. For demonstration purposes, it has been tested with a dataset from **Kaggle**:  
+[Salary Insights by Job Role](https://www.kaggle.com/datasets/zahranusrat/salary)
+
+---
+
+## Installation
+
+Make sure you have Python 3 installed and the required packages:
+
+```bash
+pip install pandas
